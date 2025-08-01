@@ -1,110 +1,69 @@
-# 🛍️ E-Shop 
+# E-shop
 
-**E-Shop** is a backend service for an e-commerce platform focused on selling clothing. It is built using **Node.js**, **Express**, **MongoDB**, and uses **JWT** for user authentication. This backend provides APIs for user registration, login, product handling, image uploads, and order management.
-
----
-
-## ✨ Features
-
-- User authentication (JWT-based)
-- Secure password storage with Bcrypt
-- RESTful API for managing:
-  - Users
-  - Products
-  - Orders
-- Image uploading using Multer
-- Cross-Origin Resource Sharing (CORS) enabled
-- Environment variable management with dotenv
+E-shop is a modern full-stack e-commerce website focused on clothing and fashion.  
+Built with React on the frontend and Node.js + Express + MongoDB on the backend.
 
 ---
 
+## Features
+
+- User registration and login with JWT authentication  
+- Account management and profile editing  
+- Order history display  
+- Responsive yellow-themed UI  
+- Secure password hashing with bcrypt  
+- File uploads handled by multer  
+- API backend with Express and MongoDB  
 
 ---
 
-## 🛠️ Tech Stack
+## Technologies Used
 
-- **Backend**: Node.js, Express
-- **Database**: MongoDB with Mongoose
-- **Authentication**: JWT
-- **File Uploads**: Multer
-- **Security**: Bcrypt
-- **Development**: Nodemon
+- React  
+- React Router DOM  
+- Node.js  
+- Express.js  
+- MongoDB with Mongoose  
+- JSON Web Tokens (JWT)  
+- bcryptjs for password hashing  
+- multer for file uploads  
+- dotenv for environment variables  
+- cors for Cross-Origin Resource Sharing  
+- axios for HTTP requests  
+- nodemon for development  
 
 ---
 
-## 🔧 Installation
+## Installation & Setup
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Prashant-8008/server.git
-   cd server
 
+   ```bash
+   git clone https://github.com/yourusername/e-shop.git
+   cd e-shop
 2.**Install dependencies:**
 
- bash
-  -npm install
+npm install
 
-  
-**Set up .env file:**
+
+3.**Configure environment variables:**
 
 Create a .env file in the root directory and add:
-
-
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/eshop
-JWT_SECRET=your_jwt_secret_key
-Run the server:
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
 
-**Development mode:**
-
-bash
+4.**Run the development server:**
 
 npm run dev
 
+**Usage** 
 
-**Production mode:**
+Register a new account on the website
 
-bash
+Log in to manage your profile and view order history
 
-npm start
+Browse clothing products and place orders (feature ongoing)
 
-🚀 API Endpoints (Sample)
-Method	Endpoint	Description
-POST	/api/auth/register - 	Register a user
-POST	/api/auth/login	  -Login user
-GET	/api/products	  -Get all products
-POST	/api/products -	Create new product
-GET	/api/orders	  -Get user orders
 
-Full API documentation coming soon...
 
-📦 Dependencies
-=> axios – Promise-based HTTP client
-
-=> bcryptjs – Password hashing
-
-=> cors – CORS middleware
-
-=> dotenv – Environment variable loader
-
-=> express – Node.js web framework
-
-=> jsonwebtoken – JWT token management
-
-=> mongoose – MongoDB ODM
-
-=> multer – File upload middleware
-
-Dev Dependency:
-
-=> nodemon – Auto-restarts server on changes
-
-📌 Notes
-Ensure MongoDB is running locally or use MongoDB Atlas.
-
-Image uploads are stored in /uploads directory. Make sure this folder is writable.
-
-Don’t forget to set a strong JWT_SECRET in production.
-
-🤝 Contributing
-Feel free to fork this repo and submit pull requests. If you find bugs or have suggestions, please open an issue.
