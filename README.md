@@ -1,4 +1,4 @@
-# 🛍️ E-Shop (Backend)
+# 🛍️ E-Shop 
 
 **E-Shop** is a backend service for an e-commerce platform focused on selling clothing. It is built using **Node.js**, **Express**, **MongoDB**, and uses **JWT** for user authentication. This backend provides APIs for user registration, login, product handling, image uploads, and order management.
 
