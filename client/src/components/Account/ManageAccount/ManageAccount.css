@@ -1,0 +1,104 @@
+.manage__account__container {
+  width: 100%;
+  max-width: 700px; /* wider form for better look */
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+  color: black; /* text color */
+}
+
+.edit__account__container, .delete_account__container {
+  background-color: #fff9d6; /* light yellow background */
+  box-shadow: 0 4px 8px rgba(255, 226, 110, 0.4); /* yellow-ish shadow */
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.edit__account__header, .delete__account__header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.edit__account__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edit__input__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.edit__account__input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ffe26e; /* yellow border */
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.edit__account__input:focus {
+  outline: none;
+  border-color: #f1c40f; /* brighter yellow on focus */
+}
+
+.save__changes__button, .delete__account__button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px dashed #ffe26e;
+  background-color: transparent;
+  color: black;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.save__changes__button:hover, .delete__account__button:hover {
+  background-color: #ffe26e;
+  color: black;
+  border-color: #f1c40f;
+  box-shadow: 0 4px 12px rgba(255, 226, 110, 0.6);
+}
+
+.separator__line {
+  height: 5px;
+  width: 60%;
+  background-color: #ffe26e;
+  margin: 0 auto 30px auto;
+  border-radius: 3px;
+}
+
+/* Delete account button specific style */
+.delete__account__button {
+  background-color: #ff6e6e;
+  border-color: #ff6e6e;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.delete__account__button:hover {
+  background-color: #ff4c4c;
+  border-color: #ff4c4c;
+  box-shadow: 0 4px 12px rgba(255, 76, 76, 0.6);
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .manage__account__container {
+    max-width: 100%;
+    padding: 10px;
+  }
+}

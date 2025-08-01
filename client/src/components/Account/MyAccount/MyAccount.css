@@ -1,0 +1,114 @@
+.order__history__container {
+  height: 200px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  background-color: #fff9d6; /* light yellow background */
+  box-shadow: 0 4px 10px rgba(255, 226, 110, 0.5);
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.order__history {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.order__history__header {
+  width: 100%;
+  height: 50px;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.order__history__detail {
+  width: 100%;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.account__details__container {
+  width: 30%;
+  height: 200px;
+  background-color: #fff9d6;
+  box-shadow: 0 4px 10px rgba(255, 226, 110, 0.5);
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: black;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.account__details__header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 780px) {
+  .account__details__header {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+  }
+}
+
+.details__header {
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+
+.logout__action {
+  padding: 8px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+  align-self: flex-end;
+}
+
+.logout__action:hover {
+  background-color: #ffe26e;
+  color: black;
+}
+
+.account__details {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.account__holder__name,
+.account__holder__email {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.manage__account__action a {
+  font-weight: bold;
+  color: #f1c40f; /* darker yellow */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.manage__account__action a:hover {
+  color: #131312;
+  text-decoration: underline;
+}
