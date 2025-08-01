@@ -1,102 +1,110 @@
-E-shop
-E-shop is a modern, full-stack e-commerce web application focused on clothing and fashion. Built with React for the frontend and Express/MongoDB backend, it provides user authentication, product management, and order history features.
+# 🛍️ E-Shop (Backend)
 
-Features
-User registration and login with JWT authentication
+**E-Shop** is a backend service for an e-commerce platform focused on selling clothing. It is built using **Node.js**, **Express**, **MongoDB**, and uses **JWT** for user authentication. This backend provides APIs for user registration, login, product handling, image uploads, and order management.
 
-Manage account details
+---
+
+## ✨ Features
+
+- User authentication (JWT-based)
+- Secure password storage with Bcrypt
+- RESTful API for managing:
+  - Users
+  - Products
+  - Orders
+- Image uploading using Multer
+- Cross-Origin Resource Sharing (CORS) enabled
+- Environment variable management with dotenv
+
+---
 
 
+---
 
-Responsive design with a clean yellow-themed UI
+## 🛠️ Tech Stack
 
-Backend APIs built with Express and MongoDB
+- **Backend**: Node.js, Express
+- **Database**: MongoDB with Mongoose
+- **Authentication**: JWT
+- **File Uploads**: Multer
+- **Security**: Bcrypt
+- **Development**: Nodemon
 
-Password encryption with bcrypt
+---
 
-Secure file uploads via multer
+## 🔧 Installation
 
-Technologies & Dependencies
-Frontend: React, React Router DOM
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Prashant-8008/server.git
+   cd server
 
-Backend: Node.js, Express.js, MongoDB, Mongoose
+2.**Install dependencies:**
 
-Authentication: JSON Web Tokens (JWT), bcryptjs
+ bash
+  -npm install
 
-File Uploads: multer
+  
+**Set up .env file:**
 
-Environment Management: dotenv
+Create a .env file in the root directory and add:
 
-HTTP Requests: axios
 
-Development: nodemon
-
-Security: CORS enabled
-
-Installation
-Clone the repository
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/e-shop.git
-cd e-shop
-Install dependencies for both frontend and backend:
-
-bash
-Copy
-Edit
-npm install
-Create a .env file in the root folder with environment variables:
-
-env
-Copy
-Edit
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-Start the development server
+MONGO_URI=mongodb://localhost:27017/eshop
+JWT_SECRET=your_jwt_secret_key
+Run the server:
+
+**Development mode:**
 
 bash
-Copy
-Edit
+
 npm run dev
-API Endpoints (examples)
-POST /api/auth/register — Register a new user
 
-POST /api/auth/login — Login user
 
-GET /api/orders — Get user order history
+**Production mode:**
 
-PUT /api/account/manage — Update account info
-
-DELETE /api/account/delete — Delete user account
-
-Usage
-Register a new account
-
-Log in to access account management and order history
-
-Manage your profile information
-
-Browse and shop clothing items (to be implemented)
-
-Folder Structure
 bash
-Copy
-Edit
-/backend
-  /models
-  /routes
-  /controllers
-/frontend
-  /src
-    /components
-    /pages
-    /styles
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request.
 
-License
-This project is licensed under the MIT License.
+npm start
 
+🚀 API Endpoints (Sample)
+Method	Endpoint	Description
+POST	/api/auth/register - 	Register a user
+POST	/api/auth/login	  -Login user
+GET	/api/products	  -Get all products
+POST	/api/products -	Create new product
+GET	/api/orders	  -Get user orders
+
+Full API documentation coming soon...
+
+📦 Dependencies
+=> axios – Promise-based HTTP client
+
+=> bcryptjs – Password hashing
+
+=> cors – CORS middleware
+
+=> dotenv – Environment variable loader
+
+=> express – Node.js web framework
+
+=> jsonwebtoken – JWT token management
+
+=> mongoose – MongoDB ODM
+
+=> multer – File upload middleware
+
+Dev Dependency:
+
+=> nodemon – Auto-restarts server on changes
+
+📌 Notes
+Ensure MongoDB is running locally or use MongoDB Atlas.
+
+Image uploads are stored in /uploads directory. Make sure this folder is writable.
+
+Don’t forget to set a strong JWT_SECRET in production.
+
+🤝 Contributing
+Feel free to fork this repo and submit pull requests. If you find bugs or have suggestions, please open an issue.
